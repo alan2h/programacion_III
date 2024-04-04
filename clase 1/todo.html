@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .clase_1 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+       <li onclick="marcar('lista_1')" id="lista_1">
+            practicar programacion
+        </li> 
+       <li onclick="marcar('lista_2')" id="lista_2"><del>Estudiar PHP</del></li> 
+       <li onclick="marcar('lista_3')" id="lista_3">Estudiar javascript</li> 
+    </ol>
+    <script> 
+       function marcar(id){
+        document.getElementById(id).classList.add('clase_1');
+          alert('Tarea realizada');
+       }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        body{
+            background: rgb(101, 94, 236);
+            background: linear-gradient(90deg, rgb(74, 70, 160) 0%, rgba(106,167,139,1) 18%, rgba(0,212,255,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="agregar_fila()" type="button">agregar fila</button>
+    <table id="table">
+       <thead>
+           <th>Nombre</th>
+           <th>Apellido</th>
+           <th>Edad</th>
+       </thead>
+       <tbody>
+            <tr>
+                <td>Alan</td>
+                <td>Beck</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Alan</td>
+                <td>Beck</td>
+                <td>23</td>
+            </tr>
+       </tbody> 
+    </table>
+    <script>
+        function agregar_fila(){
+            // var <-- se utiliza para variables
+            // let <-- para variables
+            // const <-- para asignar valor
+            var table = document.getElementById('table');
+            console.log(table);
+            var fila = table.insertRow(3);
+            console.log(fila);
+            var celda_1 = fila.insertCell(0);
+            var celda_2 = fila.insertCell(1);
+            var celda_3 = fila.insertCell(2);
+            celda_1.innerHTML = 'Cosme';
+            celda_2.innerHTML = 'Fulanito';
+            celda_3.innerHTML = '45';
+        }
+    </script>
+</body>
+</html>
