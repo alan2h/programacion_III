@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/validar.css">
+    <link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+<body>
+    <form class="form_class" action="" id="id_form" method="post" novalidate>
+        <input type="text" required name="nombre" id="id_nombre" placeholder="ingrese nombre">
+        <p id="id_mensaje_nombre">Campo requerido</p>
+        <input type="text" required name="apellido" id="id_apellido" placeholder="ingrese apellido">
+        <p id="id_mensaje_apellido">Campo requerido</p>
+        <input type="button" onclick="validar()"  value="guardar"> <!--  -->
+    </form>
+    <script src="assets/js/validar.js"></script>
+</body>
+</html>
