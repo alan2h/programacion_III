@@ -1,0 +1,24 @@
+
+.imagen {
+    height: 300px;
+    width: 300px;
+}
+
+.ubicacion {
+    border: 1px solid black;
+    background: red;
+    width: 30%;
+    position: static;
+    left: 20px;
+    right: -20px;
+    margin: 20px 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+h1 {
+    border: 3px solid black;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
