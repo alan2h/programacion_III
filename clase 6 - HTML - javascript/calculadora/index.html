@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="numero1" id="id_numero1">
+    <input type="number" name="numero2" id="id_numero2">
+    <input type="number" name="resultado" id="id_resultado">
+    <input type="button" onclick="sumar()" value="sumar">
+
+    <script>
+        function sumar() {
+            let numero1 = document.getElementById('numero1').value;
+            let numero2 = document.getElementById('numero2').value;
+            let resultado = Number(numero1) + Number(numero2);
+            console.log(resultado);
+            document.getElementById('id_resultado').value = resultado
+        }
+    </script>
+
+</body>
+</html>
